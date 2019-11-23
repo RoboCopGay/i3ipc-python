@@ -30,7 +30,6 @@ class CommandReply(_BaseReply):
         ('error', str),
     ]
 
-
 class WorkspaceReply(_BaseReply):
     """A reply to the ``GET_WORKSPACES`` message.
 

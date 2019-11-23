@@ -16,6 +16,8 @@ class Rect:
         self.y = data['y']
         self.height = data['height']
         self.width = data['width']
+    def __str__(self):
+        return f'x: {self.x}, y: {self.y}, w: {self.width}, h: {self.height}'
 
 
 class Gaps:
@@ -30,3 +32,5 @@ class Gaps:
     def __init__(self, data):
         self.inner = data['inner']
         self.outer = data['outer']
+    def __str__(self):
+        return f'inner: {self.inner}, outer: {self.outer}'
