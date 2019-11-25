@@ -1,7 +1,7 @@
 import re
 import sys
-from .model import Rect, Gaps
-from . import replies
+from i3ipc.model import Rect, Gaps
+from i3ipc import replies
 from collections import deque
 from typing import List, Optional
 
@@ -76,6 +76,7 @@ class Con:
     """
 
     def __init__(self, data, parent, conn):
+        self.raw_data = data
         self._conn = conn
         self.parent = parent
 
